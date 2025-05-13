@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Inter" Noto Sans;
+  font-family: "Noto Sans", sans-serif;
+}
+.font-italic {
+  font-style: italic;
+}
+.text-noto {
+  font-family: "Inter" Noto Sans;
+  font-family: "Noto Sans", sans-serif;
+}
