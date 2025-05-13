@@ -1,22 +1,21 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginForm from "../components/LoginForm";
-import SignUpForm from "../components/SignupForm";
-import ForgotPassword from "../components/ForgotPassword"
+import SignUpForm from "../components/SignupForm";     // ✅ Make sure this file exists
+import ForgotPassword from "../components/ForgotPassword"; // ✅ Make sure this file exists
+import Home from "./Home";
 
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/signup" element={<SignUpForm />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
-const LoginPage = () => {
-    return (
-        <div>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<LoginForm />} />
-                    <Route path="/signup" element={<SignUpForm />} />
-                    <Route path="/forgot-password" element={<ForgotPassword />} />
-                </Routes>
-            </BrowserRouter>
-        </div>
-    );
-};
-
-export default LoginPage;
+export default App;
