@@ -1,21 +1,21 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Own_a_peace from "../components/OwnApeace";
-import Live_preview from "../components/LivePreview";
-import How_works from "../components/HowWorks";
-import Footers from "../components/Footer";
+import Navbar1 from "../components/2nd_page/Navbar1";
+import HeroSection from "../components/2nd_page/HeroSection";
+import GridSection from "../components/2nd_page/GridSection";
+import StepSection from "../components/2nd_page/StepSection";
+import Footer from "../components/first_page/Footer";
+
 
 function Home() {
-  return (
-    <div>
-      <Navbar />
-      <Own_a_peace />
-      <Live_preview />
-      <How_works />
-      <Footers />
-
-    </div>
-  );
+    return (
+        <>
+            <Navbar1 />
+            <HeroSection />
+            <GridSection />
+            <StepSection />
+            < Footer />
+        </>
+    );
 }
 
 export default Home;

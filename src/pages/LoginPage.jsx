@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LoginForm from "../components/LoginForm";
-import SignUpForm from "../components/SignupForm";     // ✅ Make sure this file exists
-import ForgotPassword from "../components/ForgotPassword"; // ✅ Make sure this file exists
-import Home from "./Home";
+import LoginForm from "../components/login/LoginForm";
+import SignUpForm from "../components/login/SignUpForm";     // ✅ Make sure this file exists
+import ForgotPassword from "../components/login/ForgotPassword"; // ✅ Make sure this file exists
+import Home from "./Home2";
+import Home2 from "./Home2";
 
 function App() {
   return (

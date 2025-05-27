@@ -30,7 +30,7 @@ function How_works() {
             Join the mosaic in three simle steps
           </p>
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-3 gap-4 ml-28">
+        <div className="flex flex-wrap justify-center gap-4 ">
           {steps.map((step) => (
             <div className="flex flex-col items-center justify-center w-[384px] border shadow-lg p-8 rounded-xl">
               <div className="bg-gray-200 rounded-full w-16 h-16 flex items-center justify-center">
